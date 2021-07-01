@@ -1,4 +1,4 @@
-package com.sdl.dxa.modules.solutions.model.entity;
+package com.sdl.dxa.modules.rigol.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.collect.Lists;
