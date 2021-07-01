@@ -6,6 +6,7 @@ import com.sdl.webapp.common.api.mapping.views.ModuleInfo;
 import com.sdl.webapp.common.api.mapping.views.RegisteredViewModel;
 import com.sdl.webapp.common.api.mapping.views.RegisteredViewModels;
 import com.sdl.webapp.common.api.model.entity.NavigationLinks;
+import com.sdl.webapp.common.api.model.entity.SitemapItem;
 import com.sdl.webapp.common.api.model.page.DefaultPageModel;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +19,8 @@ public class RigolInitializer {
     }
 
     @RegisteredViewModels({
+
+            @RegisteredViewModel(viewName = "FooterImages", modelClass = FooterImages.class),
             @RegisteredViewModel(viewName = "BannerList", modelClass = BannerList.class),
             @RegisteredViewModel(viewName = "BannerPicture", modelClass = BannerPicture.class),
             @RegisteredViewModel(viewName = "SolutionsContentList", modelClass = SolutionsContentList.class),
@@ -26,6 +29,7 @@ public class RigolInitializer {
             //  core GeneralPage
             @RegisteredViewModel(viewName = "Breadcrumb", modelClass = NavigationLinks.class, controllerName = "Navigation"),
             @RegisteredViewModel(viewName = "LeftNavigation", modelClass = NavigationLinks.class, controllerName = "Navigation"),
+            @RegisteredViewModel(viewName = "SiteMap", modelClass = SitemapItem.class, controllerName = "Navigation"),
             @RegisteredViewModel(viewName = "RigolPage", modelClass = DefaultPageModel.class)
     })
 
