@@ -21,15 +21,18 @@ public class RigolInitializer {
     @RegisteredViewModels({
 
             @RegisteredViewModel(viewName = "FooterImages", modelClass = FooterImages.class),
-            @RegisteredViewModel(viewName = "BannerList", modelClass = BannerList.class),
             @RegisteredViewModel(viewName = "BannerPicture", modelClass = BannerPicture.class),
             @RegisteredViewModel(viewName = "SolutionsContentList", modelClass = SolutionsContentList.class),
             @RegisteredViewModel(viewName = "SolutionsIndexContentList", modelClass = SolutionsIndexContentList.class),
+            // Home Page
+            @RegisteredViewModel(viewName = "BannerList", modelClass = BannerList.class),
+            @RegisteredViewModel(viewName = "ProductsCategory", modelClass = ProductsCategory.class),
+            // Error page
             @RegisteredViewModel(viewName = "ErrorPageNotFound", modelClass = ErrorPageNotFound.class),
             //  core GeneralPage
             @RegisteredViewModel(viewName = "Breadcrumb", modelClass = NavigationLinks.class, controllerName = "Navigation"),
             @RegisteredViewModel(viewName = "LeftNavigation", modelClass = NavigationLinks.class, controllerName = "Navigation"),
-            @RegisteredViewModel(viewName = "SiteMap", modelClass = SitemapItem.class, controllerName = "Navigation"),
+            @RegisteredViewModel(viewName = "Sitemap", modelClass = SitemapItem.class, controllerName = "Navigation"),
             @RegisteredViewModel(viewName = "RigolPage", modelClass = DefaultPageModel.class)
     })
 

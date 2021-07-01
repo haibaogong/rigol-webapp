@@ -16,7 +16,7 @@ import static com.sdl.webapp.common.api.mapping.semantic.config.SemanticVocabula
 @EqualsAndHashCode(callSuper = true)
 public class SolutionsIndexContentList extends AbstractEntityModel {
 
-    @JsonProperty("content")
+    @JsonProperty("Content")
     @SemanticProperty("s:content")
     private List<SolutionsIndexContent> content;
 

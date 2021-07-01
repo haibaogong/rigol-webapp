@@ -20,7 +20,7 @@ public class FooterImages extends AbstractEntityModel {
     @SemanticProperty("s:headline")
     private String headline;
 
-    @JsonProperty("content")
+    @JsonProperty("Content")
     @SemanticProperty("s:content")
     private List<FooterImg> content;
 

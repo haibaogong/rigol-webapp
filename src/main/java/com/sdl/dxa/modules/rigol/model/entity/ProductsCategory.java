@@ -11,15 +11,22 @@ import java.util.List;
 
 import static com.sdl.webapp.common.api.mapping.semantic.config.SemanticVocabulary.SCHEMA_ORG;
 
-@SemanticEntity(entityName = "SolutionsContentList", vocabulary = SCHEMA_ORG, prefix = "s", public_ = true)
+@SemanticEntity(entityName = "ProductsCategory", vocabulary = SCHEMA_ORG, prefix = "s", public_ = true)
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class SolutionsContentList extends AbstractEntityModel {
+public class ProductsCategory extends AbstractEntityModel {
 
-    @JsonProperty("Content")
-    @SemanticProperty("s:content")
-    private List<SolutionsContent> content;
+    @JsonProperty("Headline")
+    @SemanticProperty("s:headline")
+    private String headline;
+
+    @JsonProperty("Title")
+    @SemanticProperty("s:title")
+    private String title;
 
 
+    @JsonProperty("ProductCategory")
+    @SemanticProperty("s:productCategory")
+    private List<SolutionsPicture> productCategory;
 
 }
