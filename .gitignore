@@ -5,6 +5,9 @@
 # ignore BinaryData folder
 BinaryData/
 
+# ignore logs folder
+logs/
+
 # ignore target folder
 target/
 
